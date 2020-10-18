@@ -1,0 +1,129 @@
+.Menu {
+  height: 7rem;
+  background: transparent;
+  opacity: .7;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  background: linear-gradient(rgba(18, 18, 18, .8), rgba(18, 18, 18, .4));
+  z-index: 10;
+
+  &-logo {
+    padding-right: 3rem;
+
+    img {
+      width: 10rem;
+      height: 6rem;
+    }
+  }
+
+  &-navbar {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 25vw;
+    margin-left: 15rem;
+
+
+    li {
+      text-align: center;
+
+      a {
+        width: 100%;
+        font-size: 1.3rem;
+        font-family: 'shabnam', sans-serif;
+        color: #fff;
+        transition: .3s;
+        font-weight: 500;
+
+        &:focus {
+          color: #f82f2f;
+        }
+      }
+    }
+  }
+
+  &-user {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+
+    button {
+      background-image: linear-gradient(to right, #5C258D 0%, #4389A2 51%, #5C258D 100%);
+      font-size: .75em;
+      padding: .4rem 1rem;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 .5rem #eee;
+      border-radius: .4rem;
+
+      &:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+
+      a {
+        color: #fff;
+        font-family: 'shabnam', sans-serif;
+
+      }
+    }
+
+    .fa-search, .fa-user-circle {
+      font-size: 2rem;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+  }
+}
+
+
+@media (max-width: 1330px) {
+  .Menu {
+    &-navbar {
+      width: 70%;
+    }
+
+    &-user {
+      width: 20rem;
+    }
+  }
+}
+
+
+@media (max-width: 1180px) {
+  .Menu {
+    &-navbar {
+      margin-left: 10rem;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .Menu {
+    &-navbar {
+      width: 90%;
+      margin-left: 5rem;
+    }
+
+    &-user {
+      width: 23rem;
+    }
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .Menu {
+    display: none;
+  }
+}

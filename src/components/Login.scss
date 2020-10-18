@@ -1,0 +1,13 @@
+#exampleInputEmail1 {
+  font-size: 22px;
+
+  &::placeholder {
+    text-align: center;
+    color: #000000;
+  }
+}
+
+button {
+  position: relative;
+  left: 0;
+}

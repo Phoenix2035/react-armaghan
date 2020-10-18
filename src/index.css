@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    direction: rtl;
+    text-align: right;
+}
+
+body {
+    background: #eee;
+    font-family: 'shabnam', Helvetica,sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}

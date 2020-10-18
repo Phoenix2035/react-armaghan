@@ -1,0 +1,15 @@
+.fa-arrow-up {
+  cursor: pointer;
+  animation: arrow .6s alternate infinite;
+  font-size: 1.5rem;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(-1px);
+  }
+}
